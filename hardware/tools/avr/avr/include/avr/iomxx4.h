@@ -726,7 +726,7 @@
 #define UBRR1H	_SFR_MEM8(0xCD)
 
 #define UDR1	_SFR_MEM8(0XCE)
-#endif /* !defined(__AVR_ATmega644) */
+#endif /* !defined(__AVR_ATmega644__) */
 
 /* Reserved [0xCF..0xFF] */
 
@@ -897,6 +897,7 @@
 
 
 /* Deprecated items */
+/*
 #if !defined(__AVR_LIBC_DEPRECATED_ENABLE__)
 
 #pragma GCC system_header
@@ -932,7 +933,9 @@
 #pragma GCC poison SIG_USART1_DATA
 #pragma GCC poison SIG_USART1_TRANS
 
-#endif  /* !defined(__AVR_LIBC_DEPRECATED_ENABLE__) */
+#endif
+*/
+  /* !defined(__AVR_LIBC_DEPRECATED_ENABLE__) */
 
 
 #endif /* _AVR_IOMXX4_H_ */
